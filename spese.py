@@ -36,4 +36,12 @@ def conta_sopra(numeri,soglia):
     return contatore
 
 print("Numero di mesi in cui si supera il budget:",conta_sopra(spese,budget))
-    
+
+#Di quanto si è sforato (o rispramiato) sull'anno rispetto a 12 volte il budget?
+budget_annuo=budget*12
+eccesso=budget_annuo-sum(spese)
+if eccesso>=0:
+    risparmio=eccesso
+else:
+    eccesso=-eccesso
+print("Sull'intero anno si è sforato di:",f"{eccesso}€")
