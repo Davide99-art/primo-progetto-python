@@ -5,3 +5,5 @@ budget = 900
 for i in range(12):
     if spese[i]>budget:
         print('Si è sforato il budget nel mese di:',mesi[i])
+
+print("Totale spese dell'anno:",sum(spese),"€")
