@@ -45,3 +45,12 @@ if eccesso>=0:
 else:
     eccesso=-eccesso
 print("Sull'intero anno si è sforato di:",f"{eccesso}€")
+
+#Facciamo un grafico a barre fatto di caratteri: un # ogni 100€
+for i in range(0,12):
+    riga_i=[mesi[i]]
+    a_i=spese[i]//100
+    riga_i.append('#'*a_i)
+    print(riga_i[0],riga_i[1])    
+
+
