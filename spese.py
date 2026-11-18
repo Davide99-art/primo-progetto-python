@@ -27,4 +27,13 @@ for i in range(len(spese)):
         print('Mese più caro:',mesi[i],f"({spese[i]}€)")
     if minimo==spese[i]:
         print('Mese più economico:',mesi[i],f"({spese[i]}€)")
+#Quanti mesi sforano il budget?
+def conta_sopra(numeri,soglia):
+    contatore=0
+    for i in numeri:
+        if i>soglia:
+            contatore+=1
+    return contatore
+
+print("Numero di mesi in cui si supera il budget:",conta_sopra(spese,budget))
     
